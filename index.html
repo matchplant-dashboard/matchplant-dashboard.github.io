@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MatchPlant Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="wrap">
+  <img src="assets/logo.png" alt="MatchPlant" class="logo">
+  <h1>MatchPlant Dashboard</h1>
+  <p class="tagline">A local front end for running the MatchPlant pipeline &mdash;
+    launch each module and watch its output, all on your own computer.</p>
+
+  <!-- Shown while we check for a dashboard already running on this computer -->
+  <section id="checking" class="state">
+    <div class="spinner" aria-hidden="true"></div>
+    <p>Looking for a dashboard running on this computer&hellip;</p>
+  </section>
+
+  <!-- Shown if no local dashboard answered -->
+  <section id="not-found" class="state" hidden>
+    <p class="lede">No dashboard found running on this computer yet.</p>
+
+    <div class="card">
+      <h2>First time here?</h2>
+      <ol>
+        <li>Download the dashboard from
+          <a href="https://github.com/WorasitSangjan/MatchPlant-Dashboard" target="_blank" rel="noopener">
+            MatchPlant-Dashboard on GitHub</a> (Code &rarr; Download ZIP).</li>
+        <li>Unzip it, then double-click <code>setup.command</code>
+          (Windows: <code>setup.bat</code>). One-time only.</li>
+        <li>Double-click <code>start_dashboard.command</code>
+          (Windows: <code>start_dashboard.bat</code>) to start it &mdash;
+          do this every time you want to use the dashboard.</li>
+      </ol>
+      <p class="hint">Once it's running, this page will find it automatically &mdash;
+        or just go to
+        <a href="http://127.0.0.1:5050">http://127.0.0.1:5050</a> directly.</p>
+    </div>
+
+    <button id="retry" type="button">Check again</button>
+  </section>
+
+  <!-- Shown just before we redirect -->
+  <section id="found" class="state" hidden>
+    <p>Found it &mdash; opening your dashboard&hellip;</p>
+  </section>
+</main>
+
+<footer>
+  <a href="https://github.com/WorasitSangjan/MatchPlant-Dashboard" target="_blank" rel="noopener">Dashboard source</a>
+  &middot;
+  <a href="https://github.com/JacobWashburn-USDA/MatchPlant" target="_blank" rel="noopener">MatchPlant pipeline</a>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
