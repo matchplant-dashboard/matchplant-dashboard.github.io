@@ -9,10 +9,20 @@
 <body>
 
 <main class="wrap">
-  <img src="assets/logo.png" alt="MatchPlant" class="logo">
-  <h1>MatchPlant Dashboard</h1>
-  <p class="tagline">A local front end for running the MatchPlant pipeline &mdash;
-    launch each module and watch its output, all on your own computer.</p>
+  <div class="hero">
+    <img src="assets/logo.png" alt="MatchPlant" class="logo">
+    <div class="hero-text">
+      <h1>MatchPlant Dashboard</h1>
+      <p class="tagline">A local front end for running the MatchPlant pipeline.
+        Launch each module and watch its output, all on your own computer.</p>
+      <p class="reference">
+        Reference: Sangjan, W., Pandey, P., Best, N. B., &amp; Washburn, J. D. (2026). MatchPlant: An Open-Source
+        Pipeline for UAV-Based Single-Plant Detection from Undistorted Images with Orthomosaic Projection.
+        <em>Smart Agricultural Technology</em>, 15, 102421.
+        <a href="https://doi.org/10.1016/j.atech.2026.102421" target="_blank" rel="noopener">https://doi.org/10.1016/j.atech.2026.102421</a>
+      </p>
+    </div>
+  </div>
 
   <!-- Shown while we check for a dashboard already running on this computer -->
   <section id="checking" class="state">
@@ -22,23 +32,34 @@
 
   <!-- Shown if no local dashboard answered -->
   <section id="not-found" class="state" hidden>
-    <p class="lede">No dashboard found running on this computer yet.</p>
+    <p class="lede">Status: No dashboard found running on this computer yet.</p>
 
     <div class="card">
       <h2>First time here?</h2>
       <ol>
         <li>Download the dashboard from
-          <a href="https://github.com/WorasitSangjan/MatchPlant-Dashboard" target="_blank" rel="noopener">
-            MatchPlant-Dashboard on GitHub</a> (Code &rarr; Download ZIP).</li>
-        <li>Unzip it, then double-click <code>setup.command</code>
-          (Windows: <code>setup.bat</code>). One-time only.</li>
-        <li>Double-click <code>start_dashboard.command</code>
-          (Windows: <code>start_dashboard.bat</code>) to start it &mdash;
-          do this every time you want to use the dashboard.</li>
+          <a href="https://github.com/WorasitSangjan/MatchPlant-Dashboard" target="_blank" rel="noopener">MatchPlant-Dashboard on GitHub</a>.
+          <br>
+          Link:
+          <a href="https://github.com/WorasitSangjan/MatchPlant-Dashboard/archive/refs/heads/main.zip">Download ZIP</a>
+        </li>
+        <li>Unzip it, then double-click the setup file. One-time only.
+          <ul>
+            <li>Mac: <code>setup.command</code></li>
+            <li>Windows: <code>setup.bat</code></li>
+          </ul>
+        </li>
+        <li>Double-click the start file to start the dashboard. Do this
+          every time you want to use it.
+          <ul>
+            <li>Mac: <code>start_dashboard.command</code></li>
+            <li>Windows: <code>start_dashboard.bat</code></li>
+          </ul>
+        </li>
       </ol>
-      <p class="hint">Once it's running, this page will find it automatically &mdash;
-        or just go to
-        <a href="http://127.0.0.1:5050">http://127.0.0.1:5050</a> directly.</p>
+      <p class="hint">Step 3 opens the dashboard automatically. If it doesn't,
+        reload this page, or open
+        <a href="http://127.0.0.1:5050">http://127.0.0.1:5050</a> yourself.</p>
     </div>
 
     <button id="retry" type="button">Check again</button>
@@ -46,7 +67,7 @@
 
   <!-- Shown just before we redirect -->
   <section id="found" class="state" hidden>
-    <p>Found it &mdash; opening your dashboard&hellip;</p>
+    <p>Found it. Opening your dashboard&hellip;</p>
   </section>
 </main>
 

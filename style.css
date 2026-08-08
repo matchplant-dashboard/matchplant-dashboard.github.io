@@ -5,17 +5,7 @@
   --accent: #2e7d32;
   --card-bg: #f4f6f4;
   --border: #dcdfdc;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #14181a;
-    --fg: #eef1ef;
-    --muted: #a3ada6;
-    --accent: #6fcf73;
-    --card-bg: #1d2321;
-    --border: #2c3532;
-  }
+  --warning: #c62828;
 }
 
 * { box-sizing: border-box; }
@@ -33,17 +23,25 @@ body {
 }
 
 .wrap {
-  max-width: 32rem;
+  max-width: 44rem;
   width: 100%;
   text-align: center;
   flex: 1;
 }
 
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
 .logo {
-  width: 96px;
-  height: 96px;
+  width: 270px;
+  height: 270px;
   object-fit: contain;
-  margin-bottom: 1rem;
+  flex-shrink: 0;
 }
 
 h1 {
@@ -53,8 +51,18 @@ h1 {
 
 .tagline {
   color: var(--muted);
-  margin: 0 0 2rem;
+  margin: 0;
   line-height: 1.5;
+}
+
+.reference {
+  margin: 1rem 0 0;
+  font-size: 0.75rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+.reference a {
+  color: var(--muted);
 }
 
 .state {
@@ -62,6 +70,11 @@ h1 {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+
+/* Higher specificity than .state's `display: flex` so [hidden] actually hides. */
+.state[hidden] {
+  display: none;
 }
 
 .spinner {
@@ -79,6 +92,7 @@ h1 {
 
 .lede {
   font-weight: 600;
+  color: var(--warning);
 }
 
 .card {
@@ -98,6 +112,12 @@ h1 {
 .card ol {
   padding-left: 1.25rem;
   line-height: 1.7;
+}
+
+.card ol ul {
+  margin: 0.15rem 0 0.4rem;
+  padding-left: 1.25rem;
+  line-height: 1.5;
 }
 
 .card code {
@@ -139,4 +159,11 @@ footer {
 
 footer a {
   color: inherit;
+}
+
+@media (max-width: 420px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
 }

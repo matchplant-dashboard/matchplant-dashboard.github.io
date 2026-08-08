@@ -16,7 +16,7 @@ function show(el) {
 // (browsers treat loopback addresses as trustworthy even from an https
 // page), so this fetch is allowed. mode: "no-cors" means we can't read the
 // response body or status, only whether the request reached a live server
-// at all -- which is all we need to decide whether to redirect.
+// at all, which is all we need to decide whether to redirect.
 async function checkLocalDashboard() {
   show(checkingEl);
   try {
