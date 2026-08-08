@@ -17,13 +17,3 @@ service). This page's only job is to smooth over "first contact":
   already running on the visitor's computer, it redirects straight into it.
 - If nothing answers, it shows download/setup instructions pointing at the
   `MatchPlant-Dashboard` repo.
-
-## Setup history
-
-- [x] `MatchPlant-Dashboard` repo exists at
-  [github.com/WorasitSangjan/MatchPlant-Dashboard](https://github.com/WorasitSangjan/MatchPlant-Dashboard),
-  the URL referenced in [index.html](index.html) is correct.
-- [x] GitHub organization `matchplant-dashboard` created.
-- [x] Repo `matchplant-dashboard.github.io` created inside it and pushed.
-- [x] GitHub Pages is live and confirmed serving at
-  [matchplant-dashboard.github.io](https://matchplant-dashboard.github.io).
