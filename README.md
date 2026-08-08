@@ -1,4 +1,4 @@
-# matchplant-dashboard.github.io
+# MatchPlant-Dashboard
 
 ![License](https://img.shields.io/badge/License-MIT-blue)
 ![Open Source](https://img.shields.io/badge/Open%20Source-Yes-brightgreen)
