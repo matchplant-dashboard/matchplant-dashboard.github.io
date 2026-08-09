@@ -5,7 +5,9 @@
 ![Platform](https://img.shields.io/badge/Platform-GitHub%20Pages-orange)
 ![Research](https://img.shields.io/badge/Research-USDA--ARS-navy)
 
-Static landing page for the [MatchPlant Dashboard](https://github.com/WorasitSangjan/MatchPlant-Dashboard).
+Static landing page for the MatchPlant Dashboard, which lives at
+[github.com/JacobWashburn-USDA/MatchPlant](https://github.com/JacobWashburn-USDA/MatchPlant)
+as the `dashboard/` folder.
 Live at **[matchplant-dashboard.github.io](https://matchplant-dashboard.github.io)**.
 
 This page does **not** run the dashboard itself. The dashboard is a
@@ -16,4 +18,5 @@ service). This page's only job is to smooth over "first contact":
 - On load, it tries `fetch("http://127.0.0.1:5050/")`. If a dashboard is
   already running on the visitor's computer, it redirects straight into it.
 - If nothing answers, it shows download/setup instructions pointing at the
-  `MatchPlant-Dashboard` repo.
+  `MatchPlant` repo, downloading it gets both the pipeline and the
+  dashboard together.
