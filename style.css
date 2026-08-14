@@ -111,11 +111,20 @@ h1 {
 
 .card ol {
   padding-left: 1.25rem;
+  font-size: 1.05rem;
   line-height: 1.7;
 }
 
+.card ol > li {
+  margin-bottom: 1rem;
+}
+
+.card ol > li:last-child {
+  margin-bottom: 0;
+}
+
 .card ol ul {
-  margin: 0.15rem 0 0.4rem;
+  margin: 0.4rem 0;
   padding-left: 1.25rem;
   line-height: 1.5;
 }
