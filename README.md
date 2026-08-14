@@ -29,6 +29,6 @@ their own machine.
 1. **On load, it checks for a dashboard already running on the visitor's
    computer** (`fetch("http://127.0.0.1:5050/")`). If a dashboard is
    running there, it redirects straight into it.
-2. **If no dashboard is running**, it shows download and setup instructions
-   instead, pointing at the `MatchPlant` repo. Downloading that repo gets
-   both the pipeline and the dashboard together in one step.
+2. **If no dashboard is running**, the page guides the user to download the
+   `MatchPlant` repo instead, which includes both the pipeline and the
+   dashboard together in one step, then walks through the one-time setup.
