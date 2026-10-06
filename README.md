@@ -36,6 +36,11 @@ their own machine.
 
 ## Files
 
-- `index.html`: the whole page, with its styles and the tools slider inline.
-- `app.js`: the local-dashboard check that shows the banner.
+- `index.html`: the page markup and tools slider.
+- `styles.css`: the responsive layout and typography.
+- `app.js`: the local-dashboard check and reduced-motion video handling.
 - `media/`: the detection video, tool screenshots, and logo used by the page.
+- `media/fonts/`: IBM Plex Sans fonts and their Open Font License.
+
+The bundled fonts are licensed separately from the MIT-licensed site code; see
+`media/fonts/IBMPlexSans-LICENSE.txt`.

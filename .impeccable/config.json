@@ -1,0 +1,54 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "icon-tile-stack",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-06T21:10:58.840Z",
+        "reason": "user confirmed: approved mockup uses the four stage icon tiles"
+      },
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "index.html",
+          "styles.css"
+        ],
+        "createdAt": "2026-10-06T21:10:58.938Z",
+        "reason": "user confirmed: approved mockup uses colored top bars to identify pipeline stages"
+      },
+      {
+        "rule": "all-caps-body",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-06T21:10:59.030Z",
+        "reason": "user confirmed: approved mockup retains the short uppercase research-pipeline label"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-06T21:10:59.179Z",
+        "reason": "agent: flagged containers have inset content through .wrap or positioned 17–25px text"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-06T21:11:02.780Z",
+        "reason": "user confirmed: approved mockup retains MatchPlant warm paper background"
+      }
+    ]
+  }
+}

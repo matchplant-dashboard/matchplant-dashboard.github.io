@@ -7,6 +7,10 @@
 const DASHBOARD_URL = "http://127.0.0.1:5050/";
 const CHECK_TIMEOUT_MS = 1000;
 
+if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  document.querySelector(".hero-photo")?.pause();
+}
+
 (async function checkLocalDashboard() {
   try {
     await fetch(DASHBOARD_URL, {
