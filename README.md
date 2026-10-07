@@ -38,7 +38,7 @@ their own machine.
 
 - `index.html`: the page markup and tools slider.
 - `styles.css`: the responsive layout and typography.
-- `app.js`: the local-dashboard check and reduced-motion video handling.
+- `app.js`: the local-dashboard check and hero-video playback fallback.
 - `media/`: the detection video, tool screenshots, and logo used by the page.
 - `media/fonts/`: IBM Plex Sans fonts and their Open Font License.
 
