@@ -48,6 +48,15 @@
         ],
         "createdAt": "2026-10-06T21:11:02.780Z",
         "reason": "user confirmed: approved mockup retains MatchPlant warm paper background"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "work/previews/macos-install-preview.html"
+        ],
+        "createdAt": "2026-10-13T06:15:29.337Z",
+        "reason": "Agent: preview reproduces the existing install section. The mp-wrap width calc(100% - 48px) with margin-inline auto provides 24px horizontal insets, with 22px mobile and 15px narrow mobile insets. The full-width section background intentionally has no horizontal padding."
       }
     ]
   }

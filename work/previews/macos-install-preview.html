@@ -1,0 +1,82 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap');
+#mp-install-preview { --mp-ink:#15352d; --mp-body:#253b33; --mp-muted:#50665c; --mp-green:#2f7655; --mp-seed:#c8e17c; --mp-pale:#ecf2e9; --mp-line:#d7e1d8; --mp-white:#fff; background:var(--mp-ink); color:var(--mp-white); font:400 16px/1.55 'IBM Plex Sans','Segoe UI',Arial,sans-serif; padding:48px 0 52px; }
+#mp-install-preview, #mp-install-preview * { box-sizing:border-box; }
+#mp-install-preview .mp-wrap { width:min(1256px,calc(100% - 48px)); margin-inline:auto; }
+#mp-install-preview h2, #mp-install-preview h3, #mp-install-preview h4, #mp-install-preview p { margin-top:0; }
+#mp-install-preview h2, #mp-install-preview h3, #mp-install-preview h4, #mp-install-preview strong { font-weight:600; }
+#mp-install-preview .mp-eyebrow { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:12px; line-height:1.4; letter-spacing:.055em; text-transform:uppercase; color:var(--mp-seed); }
+#mp-install-preview h2 { margin:11px 0 0; max-width:800px; font-size:clamp(34px,4.2vw,44px); line-height:1.13; letter-spacing:-.03em; color:var(--mp-white); }
+#mp-install-preview .mp-head { margin-bottom:27px; }
+#mp-install-preview .mp-head p { max-width:70ch; margin:17px 0 0; color:#d5e5d9; line-height:1.5; }
+#mp-install-preview .mp-download { display:flex; align-items:center; flex-wrap:wrap; gap:17px; margin-bottom:24px; }
+#mp-install-preview .mp-download span, #mp-install-preview .mp-local { color:#d5e5d9; font-size:15.2px; }
+#mp-install-preview .mp-button { display:inline-flex; align-items:center; justify-content:center; min-height:52px; padding:12px 22px; border:1px solid var(--mp-seed); border-radius:9px; background:var(--mp-seed); color:var(--mp-ink); font-size:16px; font-weight:600; line-height:1.25; text-align:center; text-decoration:none; }
+#mp-install-preview .mp-button:hover { background:#d9ed9d; border-color:#d9ed9d; }
+#mp-install-preview .mp-platforms { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+#mp-install-preview .mp-platform { padding:22px 25px; border-radius:12px; background:var(--mp-white); color:var(--mp-body); min-width:0; }
+#mp-install-preview .mp-platform h3 { margin:0 0 11px; color:var(--mp-ink); font-size:22.4px; letter-spacing:-.025em; }
+#mp-install-preview ol { margin:0; padding-left:22px; }
+#mp-install-preview li { margin:6px 0; padding-left:3px; color:var(--mp-muted); font-size:16px; }
+#mp-install-preview li::marker { color:var(--mp-green); font-weight:600; }
+#mp-install-preview code { padding:2px 5px; border-radius:4px; background:var(--mp-pale); color:var(--mp-ink); font:.875em ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; white-space:nowrap; }
+#mp-install-preview .mp-help { margin-top:22px; border-block:1px solid #527667; }
+#mp-install-preview .mp-help summary { padding:15px 4px; color:var(--mp-seed); font-weight:600; cursor:pointer; }
+#mp-install-preview .mp-help summary:focus-visible { outline:3px solid var(--mp-seed); outline-offset:3px; }
+#mp-install-preview .mp-help-content { max-width:75ch; padding:0 4px 20px 20px; }
+#mp-install-preview .mp-help p { margin:0 0 11px; color:#d5e5d9; font-size:15.2px; line-height:1.5; }
+#mp-install-preview .mp-help p:last-child { margin-bottom:0; }
+#mp-install-preview .mp-help ol { margin:0 0 12px; padding-left:22px; }
+#mp-install-preview .mp-help li { margin:6px 0; padding-left:3px; color:#d5e5d9; font-size:15.2px; }
+#mp-install-preview .mp-help li::marker { color:var(--mp-seed); font-weight:600; }
+#mp-install-preview .mp-help code { padding:2px 5px; border-radius:4px; background:#e2ebe0; color:var(--mp-ink); font:.875em ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; white-space:nowrap; }
+#mp-install-preview .mp-help strong { color:var(--mp-white); }
+#mp-install-preview .mp-help a { color:var(--mp-seed); font-weight:600; text-underline-offset:3px; }
+#mp-install-preview .mp-local { margin:18px 0 0; }
+#mp-install-preview .mp-local strong { color:var(--mp-seed); }
+#mp-install-preview a:focus-visible { outline:3px solid #397c91; outline-offset:4px; }
+@media(max-width:760px) { #mp-install-preview .mp-wrap { width:min(600px,calc(100% - 44px)); } #mp-install-preview .mp-platforms { grid-template-columns:1fr; gap:13px; } #mp-install-preview h2 { font-size:34px; } }
+@media(max-width:380px) { #mp-install-preview .mp-wrap { width:calc(100% - 30px); } #mp-install-preview .mp-platform { padding:20px; } #mp-install-preview code { white-space:normal; overflow-wrap:anywhere; } }
+</style>
+<section id="mp-install-preview" aria-label="Preview of MatchPlant installation instructions">
+  <div class="mp-wrap">
+    <div class="mp-head">
+      <span class="mp-eyebrow">Run MatchPlant locally</span>
+      <h2>Download once. Launch from your computer.</h2>
+      <p>The dashboard opens in your browser. Processing and native GUI tools run on your machine.</p>
+    </div>
+    <div class="mp-download">
+      <a class="mp-button" href="https://github.com/JacobWashburn-USDA/MatchPlant/archive/refs/heads/main.zip">Download MatchPlant ZIP ↗</a>
+      <span>Unzip it, then open the <strong>dashboard</strong> folder.</span>
+    </div>
+    <div class="mp-platforms">
+      <div class="mp-platform">
+        <h3>macOS</h3>
+        <ol>
+          <li>Double-click <code>setup.command</code> once.</li>
+          <li>Double-click <code>start_dashboard.command</code> whenever you want to use MatchPlant.</li>
+        </ol>
+      </div>
+      <div class="mp-platform">
+        <h3>Windows</h3>
+        <ol>
+          <li>Double-click <code>setup.bat</code> once.</li>
+          <li>Double-click <code>start_dashboard.bat</code> whenever you want to use MatchPlant.</li>
+        </ol>
+      </div>
+    </div>
+    <details class="mp-help">
+      <summary>macOS installation help: “setup.command” Not Opened</summary>
+      <div class="mp-help-content">
+        <p>macOS could not verify the file, so setup has not started. First confirm your download came from the <a href="https://github.com/JacobWashburn-USDA/MatchPlant">official MatchPlant repository ↗</a>.</p>
+        <ol>
+          <li>Click <strong>Done</strong> in the warning.</li>
+          <li>Open <strong>System Settings → Privacy &amp; Security</strong> and scroll to <strong>Security</strong>.</li>
+          <li>Click <strong>Open Anyway</strong> for <code>setup.command</code>, then confirm <strong>Open</strong>.</li>
+        </ol>
+        <p>If <strong>Open Anyway</strong> is missing, double-click the file again and return to Privacy &amp; Security. When setup finishes, open <code>start_dashboard.command</code>; repeat these steps if macOS blocks it too. <a href="https://support.apple.com/en-us/102445">See Apple’s instructions ↗</a></p>
+      </div>
+    </details>
+    <p class="mp-local"><strong>Local dashboard:</strong> It opens automatically at 127.0.0.1:5050 after you start it.</p>
+  </div>
+</section>

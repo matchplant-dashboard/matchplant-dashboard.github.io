@@ -26,19 +26,15 @@ their own machine.
 
 ## What this page actually does
 
-1. **On load, it checks for a dashboard already running on the visitor's
-   computer** (`fetch("http://127.0.0.1:5050/")`). If one is running, a banner
-   at the top links straight into it.
-2. **If no dashboard is running**, the banner stays hidden and the page's
-   install section guides the user to download the `MatchPlant` repo, which
-   includes both the pipeline and the dashboard together in one step, then
-   walks through the one-time setup.
+The install section guides visitors to download the `MatchPlant` repo, which
+includes both the pipeline and the dashboard together in one step, then walks
+through the one-time setup and launch steps.
 
 ## Files
 
 - `index.html`: the page markup and tools slider.
 - `styles.css`: the responsive layout and typography.
-- `app.js`: the local-dashboard check and hero-video playback fallback.
+- `app.js`: the hero-video playback fallback.
 - `media/`: the detection video, tool screenshots, and logo used by the page.
 - `media/fonts/`: IBM Plex Sans fonts and their Open Font License.
 

@@ -59,10 +59,6 @@ strong, b { font-weight: 600; }
 .button.seed:hover { background: #d9ed9d; border-color: #d9ed9d; }
 .nav .button { min-width: 204px; min-height: 48px; font-size: .95rem; }
 
-.dash-found { background: var(--green); color: var(--white); }
-.dash-found[hidden] { display: none; }
-.dash-found .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-block: 12px; }
-
 .hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .93fr); align-items: center; gap: 48px; padding-block: 58px 72px; }
 .hero h1 { max-width: 570px; margin: 24px 0 25px; color: var(--ink); font-size: clamp(3.1rem, 4.05vw, 3.625rem); line-height: 1.12; letter-spacing: -.035em; }
 .hero h1 em { color: var(--green); font-style: normal; }
@@ -150,6 +146,18 @@ strong, b { font-weight: 600; }
 .platform li { margin: 6px 0; padding-left: 3px; color: var(--muted); font-size: 1rem; }
 .platform li::marker { color: var(--green); font-weight: 600; }
 .platform code { padding: 2px 5px; border-radius: 4px; background: var(--pale); color: var(--ink); font: .875em var(--font-data); white-space: nowrap; }
+.mac-help { margin-top: 22px; border-block: 1px solid #527667; }
+.mac-help summary { padding: 15px 4px; color: var(--seed); font-weight: 600; cursor: pointer; }
+.mac-help summary:focus-visible { outline: 3px solid var(--seed); outline-offset: 3px; }
+.mac-help-content { max-width: 75ch; padding: 0 4px 20px 20px; }
+.mac-help p { margin: 0 0 11px; color: #d5e5d9; font-size: .95rem; line-height: 1.5; }
+.mac-help p:last-child { margin-bottom: 0; }
+.mac-help ol { margin: 0 0 12px; padding-left: 22px; }
+.mac-help li { margin: 6px 0; padding-left: 3px; color: #d5e5d9; font-size: .95rem; }
+.mac-help li::marker { color: var(--seed); font-weight: 600; }
+.mac-help code { padding: 2px 5px; border-radius: 4px; background: #e2ebe0; color: var(--ink); font: .875em var(--font-data); white-space: nowrap; }
+.mac-help strong { color: var(--white); }
+.mac-help a { color: var(--seed); font-weight: 600; text-underline-offset: 3px; }
 .local-note { margin: 18px 0 0; }
 .local-note strong { color: var(--seed); }
 
