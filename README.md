@@ -29,7 +29,7 @@ their own machine.
 The install section guides visitors to download the `MatchPlant` repo, which
 includes both the pipeline and the dashboard together in one step, then walks
 through the one-time setup and launch steps. It also has expandable macOS help
-for the “setup.command” Not Opened warning. The setup scripts in the downloaded
+for “Not Opened” warnings on both command files. The setup scripts in the downloaded
 repo guide users to Python downloads if Python is missing.
 
 ## Files
