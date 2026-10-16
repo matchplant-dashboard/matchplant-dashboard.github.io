@@ -26,3 +26,19 @@ if (heroVideo && videoPlayButton) {
   });
   startHeroVideo();
 }
+
+const walkthroughVideo = document.querySelector(".walkthrough-video");
+const walkthroughPlayButton = document.querySelector(".walkthrough-play");
+
+if (walkthroughVideo && walkthroughPlayButton) {
+  walkthroughPlayButton.hidden = false;
+  walkthroughPlayButton.addEventListener("click", () => {
+    walkthroughVideo.play().catch(() => {
+      // Leave the browser's built-in controls available if playback fails.
+      walkthroughPlayButton.hidden = true;
+    });
+  });
+  walkthroughVideo.addEventListener("playing", () => {
+    walkthroughPlayButton.hidden = true;
+  });
+}
