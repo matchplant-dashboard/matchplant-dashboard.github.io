@@ -132,6 +132,13 @@ strong, b { font-weight: 600; }
 .slider-arrows button:hover:not(:disabled) { background: var(--ink); color: var(--white); }
 .slider-arrows button:disabled { opacity: .4; cursor: default; }
 
+.walkthrough { padding-block: 70px; border-top: 1px solid var(--line); background: var(--pale); }
+.walkthrough-grid { display: grid; grid-template-columns: minmax(0, .72fr) minmax(0, 1.28fr); align-items: center; gap: clamp(32px, 5vw, 72px); }
+.walkthrough-copy h2 { max-width: 12ch; margin: 0 0 18px; color: var(--ink); font-size: clamp(2.25rem, 3.05vw, 2.75rem); line-height: 1.13; letter-spacing: -.03em; }
+.walkthrough-copy p { max-width: 37ch; margin: 0 0 22px; color: var(--muted); font-size: 1.0625rem; line-height: 1.5; }
+.walkthrough-duration { color: var(--green); font: .8125rem/1.4 var(--font-data); }
+.walkthrough-video { display: block; width: 100%; aspect-ratio: 16 / 9; border-radius: 15px; background: var(--ink); color: var(--white); object-fit: contain; }
+
 .install { padding-block: 68px 76px; background: var(--ink); color: var(--white); }
 .install .eyebrow { color: var(--seed); }
 .install-head { margin-bottom: 27px; }
@@ -186,6 +193,8 @@ strong, b { font-weight: 600; }
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; }
   .hero-visual { justify-self: start; height: 400px; }
+  .walkthrough-grid { grid-template-columns: 1fr; gap: 28px; }
+  .walkthrough-copy h2, .walkthrough-copy p { max-width: 60ch; }
 }
 
 @media (max-width: 760px) {
@@ -229,6 +238,8 @@ strong, b { font-weight: 600; }
   .tool figcaption { min-height: 0; }
   .slider-ctl { flex-wrap: wrap; }
   .slider-status { flex-basis: 100%; }
+  .walkthrough { padding-block: 58px 64px; }
+  .walkthrough-copy h2 { max-width: 14ch; font-size: 2.125rem; }
   .install { padding-block: 60px 68px; }
   .install-head { margin-bottom: 27px; }
   .platforms { grid-template-columns: 1fr; gap: 13px; }
