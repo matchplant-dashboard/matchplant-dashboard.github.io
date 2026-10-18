@@ -161,7 +161,7 @@ main > .install::before { background: var(--seed); }
 .platform ol { margin: 0; padding-left: 22px; }
 .platform li { margin: 6px 0; padding-left: 3px; color: var(--muted); font-size: 1rem; }
 .platform li::marker { color: var(--green); font-weight: 600; }
-.platform code { padding: 2px 5px; border-radius: 4px; background: var(--pale); color: var(--ink); font: .875em var(--font-data); white-space: nowrap; }
+.platform code { padding: 2px 5px; border-radius: 4px; background: var(--pale); color: var(--ink); font: .875em var(--font-data); overflow-wrap: anywhere; }
 .mac-help { margin-top: 22px; border-block: 1px solid #527667; }
 .mac-help summary { padding: 15px 4px; color: var(--seed); font-weight: 600; cursor: pointer; }
 .mac-help summary:focus-visible { outline: 3px solid var(--seed); outline-offset: 3px; }
@@ -171,7 +171,7 @@ main > .install::before { background: var(--seed); }
 .mac-help ol { margin: 0 0 12px; padding-left: 22px; }
 .mac-help li { margin: 6px 0; padding-left: 3px; color: #d5e5d9; font-size: .95rem; }
 .mac-help li::marker { color: var(--seed); font-weight: 600; }
-.mac-help code { padding: 2px 5px; border-radius: 4px; background: #e2ebe0; color: var(--ink); font: .875em var(--font-data); white-space: nowrap; }
+.mac-help code { padding: 2px 5px; border-radius: 4px; background: #e2ebe0; color: var(--ink); font: .875em var(--font-data); overflow-wrap: anywhere; }
 .mac-help strong { color: var(--white); }
 .mac-help a { color: var(--seed); font-weight: 600; text-underline-offset: 3px; }
 .local-note { margin: 18px 0 0; }

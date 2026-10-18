@@ -27,10 +27,12 @@ their own machine.
 ## What this page actually does
 
 The install section guides visitors to download the `MatchPlant` repo, which
-includes both the pipeline and the dashboard together in one step, then walks
-through the one-time setup and launch steps. It also has expandable macOS help
-for “Not Opened” warnings on both command files. The setup scripts in the downloaded
-repo guide users to Python downloads if Python is missing.
+includes both the pipeline and the dashboard together in one step. Inside its
+`dashboard/` folder, visitors run `1_Setup_macOS.command` or
+`1_Setup_Windows.bat` once, then use `2_Start_macOS.command` or
+`2_Start_Windows.bat` each time. The page also has expandable macOS help for
+“Not Opened” warnings on both command files. The setup scripts guide users to
+Python downloads if Python is missing.
 
 ## Files
 
