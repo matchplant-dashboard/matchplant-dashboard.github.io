@@ -44,3 +44,7 @@ Python downloads if Python is missing.
 
 The bundled fonts are licensed separately from the MIT-licensed site code; see
 `media/fonts/IBMPlexSans-LICENSE.txt`.
+
+## Creator
+
+Worasit Sangjan [worasitsangjan.github.io](https://worasitsangjan.github.io/)
