@@ -188,6 +188,7 @@ main > .install::before { background: var(--seed); }
 .site-footer { padding-block: 34px; border-top: 1px solid var(--line); background: #e7eee5; }
 .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 30px; }
 .footer-inner p { margin: 9px 0 0; color: var(--muted); font-size: .875rem; }
+.footer-credit a { color: var(--ink); font-weight: 600; text-underline-offset: 3px; }
 .footer-links a { color: var(--ink); font-size: .9rem; font-weight: 600; text-underline-offset: 3px; }
 
 @media (max-width: 1080px) {
